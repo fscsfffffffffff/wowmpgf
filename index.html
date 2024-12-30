@@ -9,10 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background: linear-gradient(to bottom, #4facfe, #00f2fe);
             color: #fff;
             text-align: center;
@@ -20,21 +16,22 @@
         .container {
             max-width: 600px;
             padding: 20px;
+            margin: 20px auto;
             background: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            margin-bottom: 20px;
         }
         .btn {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 10px 20px;
             font-size: 1rem;
             color: #fff;
             background-color: #ff5f6d;
@@ -46,6 +43,30 @@
         }
         .btn:hover {
             background-color: #e64952;
+        }
+        ul {
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul > li {
+            margin-bottom: 10px;
+        }
+        ul > li > ul {
+            padding-left: 20px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
